@@ -17,7 +17,7 @@ const PostPage = async() => {
           {
             userData?.slice(0,20).map(({id,title,body}) => <div key={id} className='border p-10'>
 
-           <h1>Name:{title}</h1>
+           <h1>NameTitle:{title}</h1>
            <h1 className={`${oswald.className}`}>Description:{body}</h1>
            <Link className='btn bg-sky-700' href={`/post/${id}`}>View Details</Link>
            
